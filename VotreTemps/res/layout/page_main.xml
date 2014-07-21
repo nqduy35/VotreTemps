@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <!-- Head bar -->
+
+    <RelativeLayout
+        android:id="@+id/rltHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#000000" >
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/cl_black" >
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_home_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnInfo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/cl_yellow_android" >
+
+            <Button
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/ic_plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+    <!-- Body -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="420dp" >
+
+        <LinearLayout
+            android:id="@+id/lnr_body"
+            android:layout_width="fill_parent"
+            android:layout_height="420dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+		
+        <LinearLayout 
+            android:id="@+id/lnrCaution"
+            android:layout_height="120dp"
+            android:layout_width="280dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            >
+            <TextView 
+                android:id="@+id/txtCaution"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:background="@color/cl_gray_alpha"
+                android:textSize="20dp"
+                android:textColor="@color/cl_red_android"
+                android:textStyle="bold"
+                android:text="@string/en_Error"
+                />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/lnrCautionAdd"
+            android:layout_height="120dp"
+            android:layout_width="280dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            >
+            <TextView 
+                android:id="@+id/txtCautionAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:background="@color/cl_gray_alpha"
+                android:textSize="20dp"
+                android:textColor="@color/cl_red_android"
+                android:textStyle="bold"
+                android:text="@string/en_Error"
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/lnrEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="420dp"
+            android:background="@color/cl_gray_alpha_2"
+            android:visibility="invisible"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/txtAnnonceTaskNew"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="Task :"
+                                android:textColor="@color/cl_white"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/edtTaskEdit"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp" 
+                            android:maxLength="18"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/txtAnnonceTaskDescriptionNew"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="Description :"
+                                android:textColor="@color/cl_white"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/edtDescriptionEdit"
+                            android:layout_width="250dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+                            android:lines="3"
+                            android:layout_gravity="top|left"
+                            android:inputType="textMultiLine" />
+                    </LinearLayout>                   
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical" >
+
+                            <TextView
+                                android:id="@+id/txtAnnonceTaskStartNew"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="Start :"
+                                android:textColor="@color/cl_white"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <DatePicker
+                            android:id="@+id/dpkStartEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/txtAnnonceTaskEndNew"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="End :"
+                                android:textColor="@color/cl_white"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <DatePicker
+                            android:id="@+id/dpkEndEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnAddEdit"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:text="Confirm" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrAnnonceKanban"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="270dp"
+            android:background="@color/cl_gray_alpha"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/txtAnnonceKanban"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/en_AnnonceKanbanChose"
+                android:textColor="@color/cl_white"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnTodo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="TODO"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDoing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="DOING"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="10dp"
+                    android:layout_height="fill_parent" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="DONE"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrAnnonceDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="270dp"
+            android:background="@color/cl_gray_alpha"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/txtAnnonceDetlete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/en_AnnonceDelete"
+                android:textColor="@color/cl_white"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnAcceptDelete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/en_Yes"
+                    android:textSize="26dp" />
+
+                <LinearLayout
+                    android:layout_width="16dp"
+                    android:layout_height="fill_parent" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRefuseDelete"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/en_Non"
+                    android:textSize="26dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Tail -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/cl_blue_android" >
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_gantt" />
+
+            <RelativeLayout
+                android:id="@+id/btnGantt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/cl_green_android" >
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_kanban" />
+
+            <RelativeLayout
+                android:id="@+id/btnKanban"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/cl_red_android" >
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_edit" />
+
+            <RelativeLayout
+                android:id="@+id/btnEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/cl_violet_android" >
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_setting" />
+
+            <RelativeLayout
+                android:id="@+id/btnSetting"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

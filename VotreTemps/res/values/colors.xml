@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    
+    <color name="cl_white">#FFFFFF</color>
+    <color name="cl_black">#000000</color>
+    
+    <color name="cl_brown_hunter">#71693D</color>
+    <color name="cl_cream_hunter">#D8D08A</color> 
+    <color name="cl_blue_dark_hunter">#203A5D</color> 
+    <color name="cl_green_dark_hunter">#426B23</color>
+    <color name="cl_gray_light_hunter">#B0B3A3</color>
+ 
+    <color name="cl_blue_android">#33B5E5</color>
+    <color name="cl_green_android">#99CC00</color>  
+	<color name="cl_red_android">#FF4444</color>
+	<color name="cl_violet_android">#AA66CC</color>
+	<color name="cl_violet_android_hover">#A864CA</color>
+	<color name="cl_yellow_android">#FFBB33</color>   
+	
+	<color name="cl_gray_alpha">#AA000000</color>
+	<color name="cl_gray_alpha_2">#CC000000</color>
+</resources>

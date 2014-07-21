@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="44dp" 
+    android:background="@color/cl_violet_android_hover"
+    android:text="About"
+    android:textSize="24dp">  
+</Button>

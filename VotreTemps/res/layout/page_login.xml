@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+		
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOTRE TEMPS"
+            android:layout_marginBottom="30dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_user" />
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_password" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:layout_marginLeft="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="25dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/en_login" />
+        <TextView 
+            android:id="@+id/txtAnnonce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/en_annonce"
+            android:textSize="20dp"
+            android:textColor="@color/cl_red_android"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <Button 
+        android:id="@+id/btnDemo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/ic_demo"
+        android:layout_gravity="right"
+        />
+	
+</LinearLayout>

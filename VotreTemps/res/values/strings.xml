@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Login -->
+    <string name="app_name">VotreTemps</string>
+    <string name="action_settings">Settings</string>
+    <string name="en_annonce">Wrong password!</string>
+    <string name="fr_annonce">Mauvais mots de pass!</string>
+    <string name="en_login">LOGIN</string>
+    <string name="fr_login">ENTRER</string>
+
+    <!-- Anonnce -->
+    <string name="en_AnnonceDelete">Are you sure?</string>
+    <string name="fr_AnnonceDelete">Vous êtes sur?</string>
+    <string name="en_Yes">YES</string>
+    <string name="fr_Yes">OUI</string>
+    <string name="en_Non">NO</string>
+    <string name="fr_Non">NON</string>
+    <string name="en_AnnonceKanbanChose">Change state to : </string>
+    <string name="fr_AnnonceKanbanChose">Changer d\'état à : </string>
+    <string name="en_Error">Violate of WIP constraint in DOING column!</string>
+    <string name="fr_Error">Violer de contrainte WIP dans DOING colonne!</string>
+    
+    <!-- Home -->
+    <string name="en_Home">HOME</string>
+    <string name="fr_Home">MAISON</string>
+    <string name="en_HomeInfo">Current number of tasks availables : </string>
+    <string name="fr_HomeInfo">Nombre actuel de tâches disponibles : </string>
+    
+    <!-- Edit -->
+    <string name="en_Edit">EDIT</string>
+    <string name="fr_Edit">MODIFIER</string>
+    
+    <!-- Settings -->
+    <string name="en_Settings">SETTINGS</string>
+    <string name="fr_Settings">PARAMÈTRES</string>
+    <string name="en_SettingsLimit">Limit</string>
+    <string name="fr_SettingsLimit">Limite</string>
+    <string name="en_SettingsLanguage">Language</string>
+    <string name="fr_SettingsLanguage">Langue</string>
+    <string name="en_SettingsAlarm">Alarm</string>
+    <string name="fr_SettingsAlarm">Alarme</string>
+    <string name="en_SettingsAccount">Account : </string>
+    <string name="fr_SettingsAccount">Compte : </string>
+    <string name="en_SettingsAbout">About</string>
+    <string name="fr_SettingsAbout">À propose</string>
+    
+    <!-- Add -->
+    <string name="en_Add">NEW</string>
+    <string name="fr_Add">NOUVEAU</string>
+    <string name="en_AddTask">Task</string>
+    <string name="fr_AddTask">Tâche</string>
+    <string name="en_AddDescription">Description</string>    
+    <string name="fr_AddDescription">Description</string>
+    <string name="en_AddStart">Start</string>
+    <string name="fr_AddStart">Début</string>
+    <string name="en_AddEnd">End</string>
+    <string name="fr_AddEnd">Fin</string>
+    <string name="en_AddAdd">Add</string>
+    <string name="fr_AddAdd">Ajouter</string>
+    <string name="en_AddComfirm">Confirm</string>
+    <string name="fr_AddConfirm">Confirmer</string>
+    <string name="en_AddError">Error : The field "Task Name" is empty or the "Start Date" is bigger or equal "End Date".</string>
+    <string name="fr_AddError">Erreur : Le champ "Nom de la tâche" est vide ou la «Date de début» est plus grand ou égal «Date de début».</string>
+    
+    <!-- Statistic -->
+    <string name="en_Statistic">COUNTDOWN</string>
+    <string name="fr_Statistic">RESTE</string>
+    
+    
+    
+    
+    
+</resources>
